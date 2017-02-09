@@ -1,0 +1,134 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+    
+    .header {
+        background:#fff;
+        padding-top: 5px;
+        h1.logo a{
+            background: transparent url('../images/logo-2.svg') no-repeat left top;
+        }
+    }
+
+    .navbar-collapse {
+       .box-shadow(none);
+    }
+    .nav > li > a {
+        color: @text-color-primary;
+    }
+    .nav > li.active > a {
+        color: @color-blue;
+    }
+    
+    .promo-section .headline {
+        font-size: 32px;
+    }
+    
+    .promo-section .heading {
+        font-size: 32px;
+    }
+    
+    .progress-bar {
+        width: 300px;
+    }
+    
+    .countdown-container .number {
+        font-size: 20px;
+    }
+    
+    .signup-form .form-control {
+        width: 100%;
+    }
+    
+    .signup-form .btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .about-section .desc-holder {
+        margin-bottom: 30px;
+    }
+    
+    .timeline-container {
+        width: 90%;
+    }
+    
+    .timeline-container:before {
+        left: 0;
+    }
+    .timeline-container .timeline-icon {
+        left: 0;
+    }
+    .timeline-container .timeline-content {
+        width: 90%;
+        float: right;
+    }
+    
+    .timeline-container .timeline-content:before, .timeline-container .timeline-content.right:before {
+        left: 10%;
+        margin-left: -7px;
+        border-left: 0;
+        border-right: 7px solid #fff;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+    .modal-dialog {
+        width: 700px;
+    }
+    
+    .navbar-nav {
+        float: none;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .promo-content {
+        padding-top: 80px;
+    }
+    
+    .promo-section .data-container {
+        text-align: left;
+    }
+    
+    .promo-section .progress-bar {
+        margin-left: inherit;
+        margin-right: inherit;
+    }
+    
+    .updates-block {
+       height: 160px;
+    }
+    .updates-block .carousel-content .btn-cta {
+       position: absolute;
+    }
+    .updates-block .carousel .item {
+       height: 100px
+    }
+    .updates-block .glyphicon-chevron-right {
+       right: -60px;
+    }
+    .updates-block .glyphicon-chevron-left {
+       left: -60px;
+    }
+    .music-section .albums-block .cover-figure .record-holder {
+        right: -80px;
+    }
+    .music-section .albums-block .cover-figure:hover .record-holder {
+        right: -118px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    
+}
+
+
+

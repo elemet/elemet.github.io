@@ -1,0 +1,100 @@
+/* ====== Header ======= */
+.header {
+    color: #fff;
+    padding-top: 15px;
+}
+
+.header-scrolled {
+    .box-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+    background: #fff;
+    .transition(all 0.6s ease-in-out);
+    padding-top: 5px;
+    padding-bottom: 0;
+    .nav>li>a  {
+        color: @text-color-primary;
+    }
+    h1.logo a{
+        background: transparent url('../images/logo-2.svg') no-repeat left top;
+    }
+}
+
+h1.logo {
+    margin-top:0;
+    margin-bottom: 0;
+    a {
+        background: transparent url('../images/logo.svg') no-repeat left top;
+        display: inline-block;
+        height: 18px;
+        width: 130px;
+    }
+}
+
+/* ====== Nav ======= */
+.navbar-toggle {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    background: none;
+    position: relative;
+    top: 5px;
+    
+    &:focus {
+        outline: none;
+    }
+    
+    .toggle-title {
+        display: inline-block;
+        float: left;
+        color: @text-color-primary;
+        margin-right: 10px; 
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        top: -3px;
+    }
+    .icon-bar-wrapper {
+        float: left;
+    }
+    
+    .icon-bar {
+        background-color: @color-blue;
+        height: 3px;
+        .opacity(0.8);
+    }
+    
+    &:hover {
+        .icon-bar {
+            .opacity(1);
+        }
+    }
+    
+}
+
+.navbar-nav {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.nav>li>a {
+    color: #fff;
+    color: rgba(256, 256, 256, 0.7);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform:uppercase;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: none;
+    outline: none;
+}
+
+.nav>li.active>a {
+    color: @color-blue;
+}
+
