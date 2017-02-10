@@ -35,7 +35,7 @@
     <!-- ******HEADER****** --> 
     <header id="header" class="header navbar-fixed-top">  
         <div class="container ">    
-            <h1 class="logo pull-left"><a class="scrollto" href="#promo"></a></h1>   
+            <h1 class="logo pull-left"><a class="scrollto" href="#promo"></a></h1>
             <nav class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header text-center">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -63,34 +63,43 @@
     
     <section id="promo" class="section promo-section bg-gradient">
         <div class="container">
-            <h2 class="headline text-center">Landing Page for Your <br class="visible-sm-block"> Crowdfunding Campaign</h2>
+            <h2 class="headline text-center">Get Wattcost early: <br class="visible-sm-block"> Support our pre-order campaign now</h2>
             <div class="overview-wrapper row">
                 <div class="product-holder col-xs-12 col-md-5">
-                    <img class="img-responsive product-image" src="assets/images/product.png" alt="">
+                    <img class="img-responsive product-image" src="assets/images/beacon-home.png" alt="">
                     <div class="control text-center">
                         <a id="video-play-triggger" class="video-play-trigger" data-toggle="modal" data-target="#modal-video"><i class="fa fa-play"></i></a>                   
                     </div>
                 </div><!--//product-holder-->
                 <div class="data-container col-xs-12 col-md-7">
-                    <h3 class="heading"><span class="total">$18,000</span> <br class="visible-xs-block visible-sm-block"> <span class="text">raised by <span class="bakcers">23,000</span> amazing backers</span></h3>
+                    <h3 class="heading"><span class="total">$18,000</span> <br class="visible-xs-block visible-sm-block"> <span class="text">raised by <span id="backers" class="backers">0</span> amazing backers</span></h3>
                     <div class="progress-container">
-                        <div class="progress-bar">
-                            <div class="progress-bar-inner" data-level="36%">
+                            <div class="progress-bar">
+                            <div class="progress-bar-inner" data-level="50%">
                             </div>                                      
                         </div><!--//progress-bar-->
                         
                         <div class="meta">36% of <span class="goal">$50,000</span> goal</div>
                     </div><!--//progress-container-->
                     <div class="cta-container">
-                        <a class="btn btn-primary btn-oval btn-cta" href="#">Back Us Now</a>
+                        <a class="btn btn-primary btn-oval btn-cta" href="#open-shopping-cart-selector">Back Us Now</a>
+                        <div id="open-shopping-cart-selector" class="shopping-cart-selector">
+                            <div>
+                                <a href="#close" ><img class="close-shopping-cart-selector" src="assets/images/close-overlay.png"/></a>
+                                <img class="shopping-cart-img" src="assets/images/beacon-shopping-cart.png"/>
+                                <h2>Select How To Pay Your Super Early Bird</h2>
+                                <a href="#close" class="btn btn-primary btn-oval btn-cta" data-celery="53cf0ab50cf9430700fca8ec">Pre-order Now</a>
+                                <p>Payment processed on tooling kickoff.</p>
+                                <a href="#close" class="btn btn-primary btn-oval btn-cta" data-celery="53cf0ab50cf9430700fca8ec">Purchase Now</a>
+                                <p>20% discount and purchase now.</p>
+                            </div>
+                        </div>
+                        <!-- You only need to include this once per page -->
+                        <script async src="https://www.trycelery.com/js/celery.js"></script>
                     </div><!--//cta-container-->
                     <div class="countdown-container">
                         <span id="countdown-box" class="countdown-box"></span><span class="hidden-xs">remaining</span>
                     </div><!--//countdown-container-->
-                    
-                    <div class="intro-container">
-                        <p>Onboard has everything you need to run your own crowdfunding campaign. You can use platform such as "<a target="_blank" href="https://www.trycelery.com/">Celery</a>" to take funding money or get your users to pre-order your product.</p>
-                    </div><!--//intro-container-->
                     
                     <div class="social-container">
                         <ul class="list-inline social-list">

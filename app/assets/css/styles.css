@@ -1202,3 +1202,57 @@ body {
 .config-panel .close .fa {
   color: #fff;
 }
+
+.shopping-cart-selector {
+  position: fixed;
+  color: #6e7d91;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shopping-cart-selector h2 {
+    color: #000;
+    margin: 15px 15px 25px 0px;
+}
+
+.shopping-cart-selector:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.shopping-cart-selector > div {
+  width: 400px;
+  position: relative;
+  margin: 12% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  /*background: rgba(255, 255, 255, 0.8);*/
+  background: -moz-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+.close-shopping-cart-selector {
+  position: absolute;
+  top: -20px;
+  right: -25px;
+  cursor: pointer;
+}
+
+.shopping-cart-img {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
