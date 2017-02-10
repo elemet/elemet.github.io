@@ -51,10 +51,19 @@ $(document).ready(function() {
     http.send(params);
 
     /* ======= Backers Counter ======= */
-    var backers = 0;
-    $(window).on('click', function() {
-        backers += 1;
-        document.getElementById("backers").innerHTML = backers;
+    $("#order-button").on('click', function(e) {
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                //Using this just to reset after every refresh :D
+                localStorage.clickcount = parseInt($("#backers").text());
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("backers").innerHTML = localStorage.clickcount;
+        } else {
+            document.getElementById("backers").innerHTML = "NaN";
+        }
     });
 
     
