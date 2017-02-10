@@ -30,8 +30,33 @@ $(document).ready(function() {
          else {
              $('#header').removeClass('header-scrolled');             
          }
-    }); 
-    
+    });
+
+    /* ======= Request Number Of Celery Orders ======= */
+    var http = new XMLHttpRequest();
+    var url = "api.trycelery.com";
+    var params = "/v2/orders/count?";
+    // var authorizationBasic = getVariable('ACCESS_TOKEN_CELERY');
+    http.open("POST", url, true);
+
+    //Send the proper header information along with the request
+    http.setRequestHeader("Content-type", "application/json");
+    // http.setRequestHeader('Authorization', 'Basic ' + authorizationBasic);
+
+    http.onreadystatechange = function() { //Call a function when the state changes.
+        if(http.readyState == 4 && http.status == 200) {
+            alert(http.responseText);
+        }
+    }
+    http.send(params);
+
+    /* ======= Backers Counter ======= */
+    var backers = 0;
+    $(window).on('click', function() {
+        backers += 1;
+        document.getElementById("backers").innerHTML = backers;
+    });
+
     
     /* ======= Progress Bar ======= */
     $('.progress-bar-inner').css('width', '0');
