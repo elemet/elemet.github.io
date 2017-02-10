@@ -288,14 +288,14 @@ textarea {
   color: #36435A;
 }
 .header-scrolled h1.logo a {
-  background: transparent url('../images/logo-2.svg') no-repeat left top;
+  background: transparent url('../images/logo-black.svg') no-repeat left top;
 }
 h1.logo {
   margin-top: 0;
   margin-bottom: 0;
 }
 h1.logo a {
-  background: transparent url('../images/logo.svg') no-repeat left top;
+  background: transparent url('../images/logo-white.svg') no-repeat left top;
   display: inline-block;
   height: 18px;
   width: 130px;
@@ -404,6 +404,9 @@ h1.logo a {
 .promo-section .product-holder img {
   margin: 0 auto;
   display: inline-block;
+  position: relative;
+  right: 200px;
+  max-width: 200%;
 }
 .promo-section .product-holder .video-play-trigger {
   position: absolute;
